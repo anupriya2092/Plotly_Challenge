@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css"/>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p><b>Use the interactive charts below to explore the dataset</b></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5><b>Test Subject ID No.:</b></h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+          <p class ="fit"
+           style=" text-align:center; background-color:lightyellow;word-wrap: break-word;border:solid;border-color:rgb(232, 227, 232)">
+          The bar graph displays the top ten bacterial species(OTUs) for the selected test subject ID number. The information about the bacterial
+          species found in the belly button of the selected ID  can be seen on each bar graph line.</p>
+
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+          <p class ="fit" style="text-align:center; background-color:lightyellow;word-wrap: break-word;border:solid;border-color:rgb(232, 227, 232)">
+          The gauge chart displays the weekly washing frequency for each of the selected test subject ID number.It represents the scrubbings of the
+          belly button on a weekly basis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+         <p class ="fit" style="text-align:center; background-color:lightyellow;word-wrap: break-word;border:solid;border-color:rgb(232, 227, 232)">
+          The bubble chart displays all the bacterial species(OTUs) for the selected test subject ID number. The information about the bacterial
+          species can be seen on each bubble marker. The size of each bubble indicates the count of each bacteria sample present in the belly button of a ID.  </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>

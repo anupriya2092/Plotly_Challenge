@@ -1,0 +1,25 @@
+
+  body {
+    background-color: rgba(175, 215, 255, 0.6);
+	opacity: 0.85;
+  }
+  
+  .jumbotron{
+	
+    text-align: center;
+	color: black;
+
+  }
+  
+  .jumbotron::before {    
+      content: "";
+      background-image: url("../images/research.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+}
+  
