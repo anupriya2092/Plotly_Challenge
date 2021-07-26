@@ -3,6 +3,9 @@ Creating data visualizations and web page using Java script library Plotly.
 
 ## Purpose and Overview of the project
 1. In this project we have used bootstrap and CSS to style our webpage and Plotly , which is a java script data visualization library to create interactive features for our webpage.
+   The webpage link is provided below:
+	
+	https://anupriya2092.github.io/Plotly_Challenge/
 
 2. To test the hypothesis that the bacterial species found in a person's belly button can be used to make synthetic beef, we have gathered samples from the belly button of people
    across the country. Each person is assigned a unique ID number.
@@ -19,3 +22,4 @@ Creating data visualizations and web page using Java script library Plotly.
    
 7. The gauge chart displays the washing frequency of the selected person per week. It has maximum value of 10 and changes with each changing ID number.
 
+ 
